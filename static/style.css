@@ -1,0 +1,69 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 330px;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    border-radius: 18px;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+/* 🔥 Result */
+.result {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    animation: drop 0.4s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes drop {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}

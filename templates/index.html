@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Rating Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+
+    <!-- 🔥 Prediction Result (TOP) -->
+    <div id="result" class="result hidden">
+        ⭐ Predicted Rating: <span id="rating">0.0</span>
+    </div>
+
+    <h2>🍽 Restaurant Rating Predictor</h2>
+
+    <form id="predictForm">
+        <input type="number" id="avg_cost" placeholder="Average Cost for Two" required>
+        <input type="number" id="table_booking" placeholder="Table Booking (0/1)" required>
+        <input type="number" id="online_delivery" placeholder="Online Delivery (0/1)" required>
+        <input type="number" id="delivering_now" placeholder="Delivering Now (0/1)" required>
+        <input type="number" id="price_range" placeholder="Price Range (1-4)" required>
+        <input type="number" id="votes" placeholder="Votes" required>
+
+        <button type="submit">Predict Rating</button>
+    </form>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
